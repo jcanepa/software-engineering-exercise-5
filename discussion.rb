@@ -1,4 +1,3 @@
-#file: discussion.rb
 class Discussion
   attr_reader :title
 

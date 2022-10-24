@@ -1,4 +1,3 @@
-#file: user.rb
 class User
   def initialize
     puts "user"
@@ -8,7 +7,7 @@ class User
     return 'foo'
   end
 
-  def self.create()
+  def self.create(email=nil, password=nil)
     return 'foo'
   end
 end

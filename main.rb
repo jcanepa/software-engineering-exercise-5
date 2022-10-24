@@ -2,6 +2,8 @@
 
 require_relative 'user'
 require_relative 'discussion'
+require_relative 'devise'
+require 'active_support/core_ext/object/blank'
 
 class LaunchDiscussionWorkflow
 
@@ -27,11 +29,13 @@ class LaunchDiscussionWorkflow
   def generate_participant_users_from_email_string
     return if @participants_email_string.blank?
     @participants_email_string.split.uniq.map do |email_address|
-      User.create(email: email_address.downcase, password: Devise.friendly_token)
+      User.create(
+        email: email_address.downcase,
+        password: Devise.friendly_token)
     end
   end
 
-  # ...
+  def run_callbacks; end
 
 end
 
