@@ -1,9 +1,4 @@
 class User
-  def initialize
-    puts "user"
-  end
-
   def self.find(id); end
-
-  def self.create(email=nil, password=nil); end
+  def self.create(email, password=nil); end
 end
