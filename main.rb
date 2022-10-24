@@ -4,8 +4,9 @@
 require_relative 'user'
 require_relative 'devise'
 require_relative 'discussion'
-require_relative 'launch_discussion_workflow'
 require 'active_support/core_ext/object/blank'
+# LaunchDiscussionWorkflow (provided in assignment)
+require_relative 'launch_discussion_workflow'
 
 discussion = Discussion.new(title: "fake")
 host = User.find(42)
