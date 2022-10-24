@@ -1,5 +1,3 @@
 class Devise
-  def self.friendly_token
-    'foo'
-  end
+  def self.friendly_token; end
 end
