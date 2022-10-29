@@ -1,12 +1,12 @@
 # Exercise 5
 
-# import classes required to run the exercise
+# provided
+require_relative 'launch_discussion_workflow'
+# added to make the exercise run-able
 require_relative 'user'
 require_relative 'devise'
 require_relative 'discussion'
 require 'active_support/core_ext/object/blank'
-# LaunchDiscussionWorkflow (provided in assignment)
-require_relative 'launch_discussion_workflow'
 
 discussion = Discussion.new(title: "fake")
 host = User.find(42)
