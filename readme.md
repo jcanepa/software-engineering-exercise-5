@@ -48,3 +48,6 @@ workflow = LaunchDiscussionWorkflow.new(discussion, host, participants)
 workflow.generate_participant_users_from_email_string
 workflow.run
 ```
+
+- First, I added a sufficient number of additional classes in order to make the code runable. These were previously un-referenced in the main file
+- Second, I turned by attention to the provided class, LaunchDiscussionWorkflow
