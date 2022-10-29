@@ -8,7 +8,8 @@ class LaunchDiscussionWorkflow
 
   # Expects @participants array to be filled with User objects
   def run
-    return unless valid?
+    raise StandardError.new "You cannot run a discussion with no participants." unless valid?
+
     run_callbacks(:create) do
       ActiveRecord::Base.transaction do
         discussion.save!
