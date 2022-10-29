@@ -52,3 +52,4 @@ workflow.run
 - First, I added a sufficient number of additional classes in order to make the code runable. These were previously un-referenced in the main file
 - Second, I turned by attention to the provided class, LaunchDiscussionWorkflow
   This class had too many responsibilities!
+- Let's extract each single responsibility scope into its own class
